@@ -27,16 +27,17 @@ return {
         header = vim.split(logo, "\n"),
         -- stylua: ignore
         center = {
-          { action = LazyVim.telescope("files"),                                    desc = " Find File",       icon = " ", key = "f" },
-          { action = "VimBeGood",                                                   desc = " Git Gut",       icon = " ", key = "g" },
+          { action = "ene | Neotree",                                               desc = " Open Project",     icon = " ", key = "p" },
+          { action = LazyVim.telescope("files"),                                    desc = " Find File",        icon = " ", key = "f" },
+          { action = "VimBeGood",                                                   desc = " Git Gut",          icon = " ", key = "g" },
 --          { action = "ene | startinsert",                                        desc = " New File",        icon = " ", key = "n" },
 --          { action = "Telescope oldfiles",                                       desc = " Recent Files",    icon = " ", key = "r" },
 --          { action = "Telescope live_grep",                                      desc = " Find Text",       icon = " ", key = "g" },
-          { action = [[lua LazyVim.telescope.config_files()()]],                    desc = " Config",          icon = " ", key = "c" },
+          { action = [[lua LazyVim.telescope.config_files()()]],                    desc = " Config",           icon = " ", key = "c" },
 --          { action = 'lua require("persistence").load()',                        desc = " Restore Session", icon = " ", key = "s" },
 --          { action = "LazyExtras",                                               desc = " Lazy Extras",     icon = " ", key = "x" },
 --          { action = "Lazy",                                                     desc = " Lazy",            icon = "󰒲 ", key = "l" },
-          { action = "qa",                                                          desc = " Quit",            icon = " ", key = "q" },
+          { action = "qa",                                                          desc = " Quit",             icon = " ", key = "q" },
         },
         footer = function()
           local stats = require("lazy").stats()
