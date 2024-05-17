@@ -8,7 +8,7 @@ vim.g.mapleader = " "
 
 -- Autoformat
 -- keymap("v", "<leader>f", ":'<, '> lua vim.lsp.buf.format() <CR>", { desc = "Format selection" })
-keymap("n", "<leader>ff", ":lua vim.lsp.buf.format() <CR>", { desc = "File Format" })
+keymap("n", "<leader>F", ":lua vim.lsp.buf.format() <CR>", { desc = "File Format" })
 
 -- File
 keymap("n", "<leader>fc", ":%yank +<CR>", { desc = "File Copy" })
