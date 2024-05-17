@@ -26,7 +26,7 @@ return {
   },
 
   opts = {
-    model = "llama2",
+    model = "llama3",
     prompts = {
       Rate_Code = {
         prompt = "From 0 to 10 rate the quality of follwing code:\n```$ftype\n$sel\n```",
