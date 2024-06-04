@@ -28,9 +28,9 @@ return {
         -- stylua: ignore
         center = {
           { action = "ene | Neotree",                                               desc = " Open Project",     icon = " ", key = "p" },
-          { action = LazyVim.telescope("files"),                                    desc = " Find File",        icon = " ", key = "f" },
           { action = "VimBeGood",                                                   desc = " Git Gut",          icon = " ", key = "g" },
           { action = "e $MYVIMRC | :cd %:p:h | Neotree ",                           desc = " Config",           icon = " ", key = "c" },
+          { action = "Lazy",                                                        desc = " Lazy",             icon = "󰒲 ", key = "l" },
           { action = "qa",                                                          desc = " Quit",             icon = " ", key = "q" },
         },
         footer = function()
