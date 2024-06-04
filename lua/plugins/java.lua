@@ -19,4 +19,24 @@ return {
             },
         },
     },
+    keys = {
+        {
+            "<leader>jD",
+            ":JavaTestDebugCurrentClass<CR>",
+            desc = "Java Debug Class",
+            mode = { "n" },
+        },
+        {
+            "<leader>jd",
+            ":JavaTestDebugCurrentMethod<CR>",
+            desc = "Java Debug Method",
+            mode = { "n" },
+        },
+        {
+            "<leader>jr",
+            ":JavaTestViewLastReport<CR>",
+            desc = "Java Test Report",
+            mode = { "n" },
+        },
+    },
 }
