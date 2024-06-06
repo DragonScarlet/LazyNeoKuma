@@ -8,6 +8,14 @@ return {
                     require('telescope').load_extension('dap')
                 end)
             end,
+            keys = {
+                {
+                    "<leader>dv",
+                    ":Telescope dap variables<cr>",
+                    desc = "Dap Variables",
+                    mode = { "n" },
+                },
+            },
         },
     },
 }
