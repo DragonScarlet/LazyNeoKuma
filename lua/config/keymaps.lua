@@ -17,9 +17,6 @@ keymap("n", "<leader>ch", vim.lsp.buf.hover, { desc = "Hover" })
 keymap("n", "<leader>cs", vim.lsp.buf.signature_help, { desc = "Signature" })
 
 -- Dap
--- keymap("n", "<leader>dc", "<Cmd>lua require'jdtls'.test_class()<CR>", { desc = "Test Class" })
--- keymap("n", "<leader>df", "<Cmd>lua require'jdtls'.test_nearest_method()<CR>", { desc = "Test Function" })
--- keymap("n", "<leader>dt", "<Cmd>DapToggleRepl<CR>", { desc = "Toggle Relp" })
 vim.fn.sign_define('DapBreakpoint', { text = '󰱯', texthl = '', linehl = '', numhl = '' })
 vim.fn.sign_define('DapStopped', { text = '󰞇', texthl = '', linehl = '', numhl = '' })
 keymap('n', '<leader><Left>', ":DapContinue<CR>")
