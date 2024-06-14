@@ -34,8 +34,20 @@ return {
         },
         {
             "<leader>jr",
+            ":JavaRunnerRunMain<CR>",
+            desc = "Java Run Main",
+            mode = { "n" },
+        },
+        {
+            "<leader>jvr",
             ":JavaTestViewLastReport<CR>",
-            desc = "Java Test Report",
+            desc = "Java View Test Report",
+            mode = { "n" },
+        },
+        {
+            "<leader>jvl",
+            ":JavaRunnerToggleLogs<CR>",
+            desc = "Java View Runner Logs",
             mode = { "n" },
         },
     },
