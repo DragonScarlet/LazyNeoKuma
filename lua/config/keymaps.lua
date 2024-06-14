@@ -8,7 +8,7 @@ keymap("n", "<leader>F", ":lua vim.lsp.buf.format() <CR>", { desc = "File Format
 keymap("n", "<leader>fc", ":%yank +<CR>", { desc = "File Copy" })
 keymap("n", "<leader>fp", ":%delete | put +<CR>", { desc = "File Paste" })
 
--- Java
+-- Code
 keymap("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
 keymap("n", "<leader>cD", vim.lsp.buf.declaration, { desc = "Go to Declaration" })
 keymap("n", "<leader>cd", vim.lsp.buf.definition, { desc = "Go to definition" })
