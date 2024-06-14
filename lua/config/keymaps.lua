@@ -1,4 +1,5 @@
 local keymap = vim.keymap.set
+local sign_define = vim.fn.sign_define
 vim.g.mapleader = " "
 
 -- Autoformat
@@ -17,8 +18,8 @@ keymap("n", "<leader>ch", vim.lsp.buf.hover, { desc = "Hover" })
 keymap("n", "<leader>cs", vim.lsp.buf.signature_help, { desc = "Signature" })
 
 -- Dap
-vim.fn.sign_define('DapBreakpoint', { text = '󰱯', texthl = '', linehl = '', numhl = '' })
-vim.fn.sign_define('DapStopped', { text = '󰞇', texthl = '', linehl = '', numhl = '' })
+sign_define('DapBreakpoint', { text = '󰱯', texthl = '', linehl = '', numhl = '' })
+sign_define('DapStopped', { text = '󰞇', texthl = '', linehl = '', numhl = '' })
 keymap('n', '<leader><Left>', ":DapContinue<CR>")
 keymap('n', '<leader><Right>', ":DapStepOver<CR>")
 keymap('n', '<leader><Down>', ":DapStepInto<CR>")
